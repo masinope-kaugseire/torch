@@ -1,8 +1,9 @@
 on:
-  push:
-    branches: 
-      - master
-      - main
+  workflow_dispatch:
+  #push:
+  #  branches: 
+  #    - master
+  #    - main
 
 name: pkgdown
 
