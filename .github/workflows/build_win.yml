@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: 'self-hosted'
+    runs-on: ${{ matrix.config.runner }}
     container: ${{ matrix.container }}
     name: "os:${{matrix.config.os}} | v:${{matrix.config.version}} (pre-cxx11: ${{matrix.precxx11abi }})"
     permissions:
