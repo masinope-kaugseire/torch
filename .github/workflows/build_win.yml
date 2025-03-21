@@ -19,8 +19,8 @@ jobs:
           # when changing supported versions here, please modify supported versions
           # in install.R
 
-          - {os: windows, version: cpu}
-          - {os: windows, version: cu12.4}
+          - {os: windows, version: cpu, runner: windows-2022}
+          - {os: windows, version: cu12.4, runner: windows-2022}
         
         precxx11abi: [0, 1]
 
