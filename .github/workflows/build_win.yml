@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.config.runner }}
+    runs-on: 'self-hosted'
     container: ${{ matrix.container }}
     name: "os:${{matrix.config.os}} | v:${{matrix.config.version}} (pre-cxx11: ${{matrix.precxx11abi }})"
     permissions:
@@ -19,8 +19,8 @@ jobs:
           # when changing supported versions here, please modify supported versions
           # in install.R
 
-          - {os: windows, version: cpu, runner: windows-2019}
-          - {os: windows, version: cu12.4, runner: windows-2019}
+          - {os: windows, version: cpu}
+          - {os: windows, version: cu12.4}
         
         precxx11abi: [0, 1]
 
