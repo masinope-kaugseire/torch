@@ -1,4 +1,4 @@
-name: Lantern
+name: Build Windows packages
 
 on:
   workflow_dispatch:
